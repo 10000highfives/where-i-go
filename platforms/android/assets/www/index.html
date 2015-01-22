@@ -7,7 +7,7 @@
     <script type="text/javascript" src="/js/cordova-2.8.js"></script>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCk6_ZI1qheFSHMJMB4DYuSJyUXFQinSd4"></script>
     <script type="text/javascript" src="js/json2.js"></script>
-    <script type="text/javascript" src="js/jquery.min.js"</script>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.2.0.js"></script>
     <script type="text/javascript" src="js/where-i-go.js"></script>
     <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
@@ -15,8 +15,29 @@
     
     </head>
     <body>
-    <h1>where I go</h1>
+    <div data-role="page" id="home">
+		<div data-role="header">
+			<h1>Home</h1>
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-transition="none" data-icon="home">Home</a></li>
+					<li><a href="#start" data-transition="none" data-icon="plus">Follow</a></li>
+					<li><a href="#history" data-transition="none" data-icon="star">History</a></li>
+				</ul>
+			</div>
+		</div>
+    </div>
     
+    <div data-role="content">
+    <p>This is Where-I-Go, an app to track the places you go using your phone's GPS.</p>
+    
+    <button id="home_checkconnection" data-icon="check">Got Internet</button>
+    <button id="home_clearstorage">Clear History</button>
+    <button id="home_loadgps">Load GPS data</button>
+   
+    
+    </div>
     </body>
 </html>
 

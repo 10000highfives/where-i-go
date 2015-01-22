@@ -1,4 +1,10 @@
 /home/jared/where-i-go/platforms/android/ant-build/classes.dex : \
+/home/jared/where-i-go/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener$1.class \
+/home/jared/where-i-go/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener.class \
+/home/jared/where-i-go/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager$1.class \
+/home/jared/where-i-go/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager.class \
+/home/jared/where-i-go/platforms/android/ant-build/classes/org/apache/cordova/deviceorientation/CompassListener.class \
+/home/jared/where-i-go/platforms/android/ant-build/classes/org/apache/cordova/deviceorientation/CompassListener$1.class \
 /home/jared/where-i-go/platforms/android/ant-build/classes/io/cordova/hellocordova/R$drawable.class \
 /home/jared/where-i-go/platforms/android/ant-build/classes/io/cordova/hellocordova/BuildConfig.class \
 /home/jared/where-i-go/platforms/android/ant-build/classes/io/cordova/hellocordova/R$xml.class \
