@@ -45,6 +45,7 @@
 /home/jared/where-i-go/platforms/android/assets/www/js/json2.js \
 /home/jared/where-i-go/platforms/android/assets/www/js/index.js \
 /home/jared/where-i-go/platforms/android/assets/www/js/jquery.mobile-1.2.0.js \
+/home/jared/where-i-go/platforms/android/assets/www/js/where-i-go.js \
 /home/jared/where-i-go/platforms/android/assets/www/plugins/org.apache.cordova.device-orientation \
 /home/jared/where-i-go/platforms/android/assets/www/plugins/org.apache.cordova.network-information \
 /home/jared/where-i-go/platforms/android/assets/www/plugins/org.apache.cordova.device-motion \

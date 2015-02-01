@@ -14,7 +14,7 @@
     
     
     </head>
-    <body>
+    <body onload="deviceReady">
     <div data-role="page" id="home">
 		<div data-role="header">
 			<h1>Home</h1>
@@ -38,6 +38,30 @@
    
     
     </div>
+    
+    <div data-role="page" id="startTracking">
+		<div data-role="header">
+			<h1>Track</h1>
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-transition="none" data-icon="home">Home</a></li>
+					<li><a href="#start" data-transition="none" data-icon="plus">Follow</a></li>
+					<li><a href="#history" data-transition="none" data-icon="star">History</a></li>
+				</ul>
+			</div>
+		</div>
+    
+		<div data-role="content">
+			<p id="startTrackingStatus"></p>
+		
+			<button data-role="button" id="startTrackingStart"</button>
+			<button data-role="button" id="startTrackingStop"</button>
+		
+			<p id="startTrackingDebug"></p>
+			
+		</div>
+	</div>
     </body>
 </html>
 
