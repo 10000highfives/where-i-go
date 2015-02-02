@@ -53,6 +53,9 @@ $("startTrackingStop").live('click', function clearWatch() {
 		}
 	window.localStorage.setItem(track_id,JSON.stringify(tracking_data));
 	tracking_data = null;
+	
+	$("#track_id").val("").show();
+	$("#startTrackingStatus").html("Stopped tracking  "+ track_id);
 });
 	
 
