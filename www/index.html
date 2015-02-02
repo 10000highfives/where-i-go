@@ -56,15 +56,19 @@
     
 	<div data-role="content">
 		<p id="startTrackingStatus"></p>
+			<div data-role="fieldcontain" class="ui-hide-label">
+				<label for="track_id">Track ID</label>
+				<input type="text" name="track_id" id="track_id" placeholder="Name" />				
+			</div>	
+			
+		<button data-role="button" id="startTrackingStart">Follow</button>
+		<button data-role="button" id="startTrackingStop">End</button>
 		
-			<button data-role="button" id="startTrackingStart">Follow Me</button>
-			<button data-role="button" id="startTrackingStop">Stop Following Me</button>
-		
-		<p id="startTrackingDebug"></p>
+				<p id="startTrackingDebug"></p>
 			
 	</div>
 </div>
-    </body>
+</body>
 </html>
 
 
