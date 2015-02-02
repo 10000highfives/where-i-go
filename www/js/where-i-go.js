@@ -1,11 +1,12 @@
 //where-i-go.js JavaScript file for where i go app
 
 document.addEventListener("deviceready", onDeviceReady);
-
+//load cordova
 function onDeviceReady() {
 	checkConnection();
 	}
 
+//look for internet
 function checkConnection() {
 	var networkState = navigator.network.connection.type;
 	
@@ -21,24 +22,38 @@ function checkConnection() {
 		
 		}
 	};
+
+//track geolocation when 'Follow' is clicked
 var track_id = ' ';
 var watch_id = null;
 var tracking_data= [];
 
 $("startTrackingStart").live('click', function() {
-	
-	watch_id = navigator.geolocation.watchPosition(
+	var options = {frequency: 60000, enableHighAccuracy: true};
+	watch_id = navigator.geolocation.watchPosition(onSuccess, onError, options);
+}
+
 		
-		function(position){
-			tracking_data.push(position);
-		},
-		
-		function(error){
-			console.log(error);
-			//instead of logging error, review inserting into the DOM via document.getElementByID("startTrackingDebug") and inner.html
-		}
-			
-		{frequency: 3000, enableHighAccuracy: true});
-	
+function onSuccess(position){
+	tracking_data.push(position);
 	$("startTrackingStatus").html("Now tracking");
-};
+}
+
+		
+function onError(error){
+	var e = document.getElementByID("startTrackingDebug");
+	e.innerHTML = "'Error code: ' + error.code + < /br> + 'Error message: ' + error.message";
+}
+
+//stop tracking when 'End' is clicked
+$("startTrackingStop").live('click', function clearWatch() {
+	if watch_id != null {
+		navigator.geolocation.clearWatch(watch_id);
+		watch_id = null;
+		}
+	window.localStorage.setItem(track_id,JSON.stringify(tracking_data));
+	tracking_data = null;
+});
+	
+
+				
